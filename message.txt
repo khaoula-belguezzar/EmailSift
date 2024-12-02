@@ -1,0 +1,53 @@
+        Spam Emails :
+
+
+Objet : Gagnez un iPhone 13 gratuitement !
+
+Corps :
+
+Félicitations ! Vous avez été sélectionné pour gagner un iPhone 13 gratuit. Cliquez sur le lien ci-dessous pour réclamer votre prix maintenant ! Ne manquez pas cette offre exclusive.
+
+Réclamez votre iPhone maintenant
+
+----------------------------------------------------
+
+Bonjour,
+
+Vous rêvez de gagner des milliers de dollars depuis le confort de votre maison ? Nous avons une opportunité incroyable pour vous !
+
+Cliquez simplement sur ce lien pour découvrir comment vous pouvez commencer à gagner de l'argent dès aujourd'hui : [Lien frauduleux]
+
+Ne manquez pas cette chance unique de changer votre vie financièrement !
+
+Cordialement,
+L'équipe de GagnezFacilement
+
+
+        Non-Spam (Ham) Emails :
+
+Objet : Réunion de projet prévue pour jeudi
+
+Corps :
+
+Bonjour Marie,
+
+J'espère que tu vas bien. Je voulais te rappeler que nous avons prévu une réunion de projet ce jeudi à 14h00 dans la salle de conférence B. Merci de préparer les documents nécessaires et de me confirmer ta disponibilité.
+
+À bientôt,
+
+Jean
+
+---------------------------------------------------
+
+Bonjour [Nom du patient],
+
+Nous vous confirmons votre rendez-vous médical avec le Dr. Dupont le 15 août 2024 à 14h30 au Centre Médical de la Ville.
+
+Veuillez arriver 10 minutes avant l'heure de votre rendez-vous pour effectuer les formalités administratives.
+
+Si vous avez des questions ou si vous devez reprogrammer votre rendez-vous, n'hésitez pas à nous contacter au 01 23 45 67 89.
+
+Merci et à bientôt,
+
+Cordialement,
+Centre Médical de la Ville

@@ -1,0 +1,87 @@
+<!-- history.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>History of Predictions</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <style>
+    
+        .spam {
+            color: red;
+            font-weight: bold;
+        }
+
+        .not-spam {
+            color: green;
+            font-weight: bold;
+        }
+
+        .btn-delete {
+            padding: 10px 15px;
+            background-color: #e74c3c; /* Initial red background color */
+            color: #fff;
+            border: 2px solid #e74c3c; /* Initial red border color */
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-left: 12px;
+            transition: background-color 0.3s, border-color 0.3s, transform 500ms;
+            font-family: Monospace;
+        }
+        
+        /* Apply the hover effect with a darker red color */
+        .btn-delete:hover {
+            background: #c0392b; /* Darker red on hover */
+            border: 2px solid #c0392b; /* Darker red border on hover */
+            animation: borderColorAnimation 2s infinite;
+            transform: scale(1.1); /* Slightly increase the button size on hover */
+            transition: 500ms;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <!-- Historique des prédictions -->
+    <h2 class="history-title">History of Predictions</h2>
+
+    <div style="overflow-x:auto;">
+        {% if history %}
+        <table>
+            <tr>
+                <th>Email</th>
+                <th>Prediction</th>
+                <th>Date</th>
+            </tr>
+            {% for email_text, prediction, prediction_date in history %}
+            <tr>
+                <td>{{ email_text }}</td>
+                <td style="text-align: center" class="{{ 'spam' if prediction == 'Spam' else 'not-spam' }}">{{ prediction }}</td>
+                <td>{{ prediction_date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p style="text-align: center;">No predictions have been made yet</p>
+        {% endif %}
+    </div>
+
+    <!-- Bouton pour retourner à la page principale -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="/index" class="btn">Retour</a>
+        <form action="/delete_history" method="post" style="display:inline;">
+            <button type="submit" class="btn-delete">Delete history</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+
